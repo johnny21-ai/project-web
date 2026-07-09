@@ -1,0 +1,143 @@
+header{
+    width:100%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+    transition: ease 0.5s;
+}
+
+nav ul li a:hover,
+.active{
+    color:#2563eb;
+    transform: scale(1.1);
+    font-size: 20px;
+}
+
+.login-btn{
+    text-decoration:none;
+    background:#2563eb;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:red;
+    
+}
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.image-box{
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.image-box img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.image-box img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* السهم*/
+.up{
+    position: fixed;
+    color: #2563eb;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+/* .up:hover{
+    background-color: red;
+} */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2563eb; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}

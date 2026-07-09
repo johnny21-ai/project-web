@@ -1,0 +1,88 @@
+/* ================= Settings ================= */
+
+.settings-title {
+    font-size: 30px;
+    color: #2563EB;
+    margin: 25px 0;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.settings-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.settings-card h3 {
+    color: #2563EB;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: .3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 5px rgba(94, 53, 177, .2);
+}
+
+.settings-btn {
+    width: 220px;
+    padding: 14px;
+    background: #2563EB;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.settings-btn:hover {
+    background: #47279a;
+}
+
+@media(max-width:768px) {
+
+    .settings-btn {
+        width: 100%;
+    }
+
+}
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .settings-card,
+.dark .sidebar,
+.dark .navbar {
+    background-color: #1e1e1e;
+    color: white;
+}

@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #F8F9FA;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+ /* Sidebar  */
+
+.sidebar {
+    width: 280px;
+    background: #F5F6FA;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.logo i {
+    color: #2563EB;
+    font-size: 30px;
+}
+
+.logo span {
+    color: #777;
+    font-size: 14px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #EEE8FF;
+    color: #2563EB;
+}
+
+.menu .active {
+    background: #2563EB;
+    color: #fff;
+}
+
+.logout {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* Main  */
+
+.main-content {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Navbar  */
+
+.navbar {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .08);
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2563EB;
+    font-weight: 600;
+}
+
+.links a:hover {
+    color: #2563EB;
+}
+
+.active-link {
+    color: #2563EB !important;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.right-nav img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cards  */
+
+.contaner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.earn,
+.student,
+.empty,
+.full {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+    transition: .3s;
+}
+
+.earn:hover,
+.student:hover,
+.empty:hover,
+.full:hover {
+    transform: translateY(-5px);
+}
+
+.earn h2,
+.earn h5 {
+    color: #2563EB;
+}
+
+.student h2,
+.student h5 {
+    color: #2196F3;
+}
+
+.empty h2,
+.empty h5 {
+    color: #FF9800;
+}
+
+.full h2,
+.full h5 {
+    color: #4CAF50;
+}
+
+.earn p,
+.student p,
+.empty p,
+.full p {
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Analysis */
+
+.Analysis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.table,
+.diagram {
+    flex: 1 1 450px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.table h3,
+.diagram h3 {
+    margin-bottom: 20px;
+    color: #2563EB;
+    text-align: right;
+}
+
+/* Table  */
+
+.table {
+    overflow-x: auto;
+}
+
+.table table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table .top {
+    background: #EEE8FF;
+}
+
+.table th,
+.table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    color: #2563EB;
+    font-weight: 700;
+}
+
+.Right {
+    color: #28A745;
+    font-weight: bold;
+}
+
+.active {
+    color: #FFC107;
+    font-weight: bold;
+}
+
+.end {
+    color: #DC3545;
+    font-weight: bold;
+}
+
+.next {
+    color: #0D6EFD;
+    font-weight: bold;
+}
+
+/* Diagram  */
+
+.diagram {
+    min-height: 350px;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.footer .button {
+    background: #2563EB;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.footer .button:hover {
+    background: #2563EB;
+}
+
+.footer .h {
+    color: #2563EB;
+    font-weight: 700;
+}
+
+/*Responsive  */
+
+/* Large Laptop */
+
+@media (max-width:1200px) {
+
+    .sidebar {
+        width: 240px;
+    }
+
+    .earn,
+    .student,
+    .empty,
+    .full {
+        flex: 1 1 45%;
+        max-width: none;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:992px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .right-nav {
+        justify-content: center;
+    }
+
+    .Analysis {
+        flex-direction: column;
+    }
+
+    .table,
+    .diagram {
+        width: 100%;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .menu li {
+        justify-content: center;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .right-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .earn,
+    .student,
+    .empty,
+    .full {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .Analysis {
+        gap: 15px;
+    }
+
+    .table,
+    .diagram {
+        padding: 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer .button {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px) {
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .table table {
+        min-width: 600px;
+    }
+
+    .count {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+    }
+
+    .right-nav img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer .button {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+}
+
+.diagram {
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.diagram canvas {
+    width: 100% !important;
+    height: 320px !important;
+}
+
+/* Dark Mode  */
+
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .sidebar {
+    background: #1E1E1E;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .table-box,
+body.dark-mode .students-table,
+body.dark-mode .report-card,
+body.dark-mode .report-table,
+body.dark-mode .settings-card,
+body.dark-mode .form,
+body.dark-mode .profile-card,
+body.dark-mode .card {
+    background: #1E1E1E;
+    color: #ffffff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode label {
+    color: #ffffff;
+}
+
+body.dark-mode table {
+    color: #ffffff;
+}
+
+body.dark-mode thead {
+    background: #2563EB;
+}
+
+body.dark-mode td {
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #2b2b2b;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode input::placeholder {
+    color: #bbb;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode .menu li:hover {
+    background: #333;
+}
+
+body.dark-mode .active {
+    background: #2563EB;
+}
+
+/* Table */
+
+body.dark-mode .table-box,
+body.dark-mode .reservation-table,
+body.dark-mode .students-table,
+body.dark-mode .report-table {
+    background: #1f1f1f;
+}
+
+body.dark-mode table {
+    background: #1f1f1f;
+}
+
+body.dark-mode thead {
+    background: #2563EB;
+}
+
+body.dark-mode tbody tr {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+    background: #292929;
+}
+
+body.dark-mode tbody tr:hover {
+    background: #333;
+}
+
+body.dark-mode td {
+    color: #fff;
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode th {
+    color: #fff;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #2b2b2b;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode input::placeholder {
+    color: #bbb;
+}
+
+body.dark-mode .card,
+body.dark-mode .report-card,
+body.dark-mode .settings-card,
+body.dark-mode .profile-card,
+body.dark-mode .form {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+body.dark-mode .box,
+body.dark-mode .card,
+body.dark-mode .dashboard-card {
+    background: #1f1f1f;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+body.dark-mode .box h2,
+body.dark-mode .box h3,
+body.dark-mode .box p {
+    color: #fff;
+}
+
+body.dark-mode table {
+    background: #1f1f1f;
+}
+
+body.dark-mode thead tr {
+    background: #2563EB;
+}
+
+body.dark-mode tbody tr {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+    background: #292929;
+}
+
+body.dark-mode tbody tr:hover {
+    background: #363636;
+}
+
+body.dark-mode .dashboard-container,
+body.dark-mode .chart-box,
+body.dark-mode .table-box {
+    background: #1f1f1f;
+    color: #fff;
+}

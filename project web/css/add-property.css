@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+    background-color: #F8F9FA;
+    color: #333333;
+    color: black;
+    transition: 0.3s;
+}
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 400px;
+    background: #F5F6FA;
+    ;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.logo i {
+    font-size: 30px;
+    color: #2563EB;
+}
+
+.logo span {
+    color: #777;
+    font-size: 14px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.menu li:hover {
+    background: #f0ebff;
+    color: #2563EB;
+}
+
+.menu .active {
+    background: #2563EB;
+    color: #fff;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+
+.main-content {
+    flex: 1;
+    padding: 25px;
+}
+
+
+
+.navbar {
+    background: #F5F6FA;
+    padding: 18px 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .08);
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    list-style: none;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2563EB;
+    font-weight: 600;
+    transition: ease .5s;
+}
+
+.links a:hover {
+    background: #f0ebff;
+    color: #2563EB;
+}
+
+.links .active-link {
+    color: #2563EB !important;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification .count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.right-nav img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right-nav img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.contaner {
+    margin-top: 25px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+}
+
+
+
+.add {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add h2 {
+    text-align: center;
+    color: #2563EB;
+    margin-bottom: 20px;
+}
+
+.add label {
+    font-weight: 600;
+    color: #444;
+}
+
+.add input,
+.add select,
+.add textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.add input:focus,
+.add select:focus,
+.add textarea:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 5px rgba(94, 53, 177, .3);
+}
+
+.add textarea {
+    resize: none;
+    height: 120px;
+}
+
+.add button {
+    margin-top: 10px;
+    background: #2563EB;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.add button:hover {
+    background: #2563EB;
+}

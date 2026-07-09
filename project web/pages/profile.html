@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+
+                <div>
+                    <h3>Mughtarib</h3>
+                    <span>Finder</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="../pages/dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/room.html">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Rooms</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reservations.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Reservations</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/students.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Students</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reports.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="logout" id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/dashboard.html">Dashboard</a></li>
+                    <li><a href="../pages/reservations.html">Reservations</a></li>
+                    <li><a class="active-link" href="../pages/profile.html">Profile</a></li>
+                </ul>
+
+                <div class="right-nav">
+
+                    <i class="fa-solid fa-moon" id="darkMode"></i>
+
+                    <div class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="count">2</span>
+                    </div>
+
+                    <img src="../image/131237776639362409.jpg" alt="User">
+
+                </div>
+
+            </nav>
+
+
+            <h2 class="profile-title">My Profile</h2>
+
+            <div class="profile-container">
+
+                <div class="profile-card">
+
+                    <div class="profile-image">
+                        <img src="../image/131237776639362409.jpg" alt="Profile">
+                        <h2>Admin</h2>
+                        <p>System Administrator</p>
+                    </div>
+
+                    <div class="profile-info">
+
+                        <div class="input-group">
+                            <label>Full Name</label>
+                            <input type="text" value="Admin">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" value="admin@gmail.com">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="tel" value="01000000000">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Address</label>
+                            <input type="text" value="Cairo, Egypt">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Role</label>
+                            <input type="text" value="Administrator" readonly>
+                        </div>
+
+                        <button class="profile-btn">
+                            Save Changes
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+
+</html>

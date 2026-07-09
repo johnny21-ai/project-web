@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #F5F6FA; 
+    color: #333333; 
+    min-height: 100vh;
+}
+.search-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.search-container{
+    width:100%;
+    max-width:900px;
+}
+
+.search-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);  
+}
+
+.search-container h2 {
+    color: #1d4ed8; 
+    font-weight: 700; 
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #EDE7F6; 
+    padding-bottom: 12px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.budget-group, .form-actions {
+    grid-column: 1 / -1;
+}
+ 
+label {
+    font-weight: 600;
+    color: #2D3748;
+    font-size: 0.95rem;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CBD5E0;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #2563eb; 
+    box-shadow: 0 0 0 3px rgba(94, 53, 177, 0.15);
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #2563eb; 
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #718096;
+}
+
+#budgetValue {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-search {
+    background-color: #2563eb; 
+    color: #FFFFFF;
+}
+
+.btn-search:hover {
+    background-color: #2563eb; 
+}
+
+.btn-search:active {
+    transform: scale(0.98); 
+}
+
+.btn-reset {
+    background-color: #EDE7F6; 
+    color: #2563eb; 
+}
+
+.btn-reset:hover {
+    background-color: #cbc4e9; 
+}
+
+.results-container {
+    margin-top: 30px;
+}

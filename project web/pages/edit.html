@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="../css/edit.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+
+                <div>
+                    <h3>Mughtarib</h3>
+                    <span>Finder</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+                    <a href="../pages/dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/room.html">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Rooms</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reservations.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Reservations</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/students.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Students</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reports.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="logout" id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a class="active-link" href="#">Dashboard</a></li>
+                    <li><a href="../pages/reservations.html">Reservations</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+
+                <div class="right-nav">
+
+                    <i class="fa-solid fa-moon" id="darkMode"></i>
+
+                    <div class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="count">2</span>
+                    </div>
+
+                    <img src="../image/131237776639362409.jpg" alt="User">
+
+                </div>
+
+            </nav>
+
+            <!-- Edit Room -->
+
+            <section class="page-content">
+
+                <div class="edit-form">
+
+                    <div class="form-group">
+                        <label>Room Name</label>
+                        <input type="text" value="Single Room" id="roomName">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Price</label>
+                        <input type="number" value="2500" id="price">
+                    </div>
+
+                    <div class="form-group">
+                        <label>City</label>
+                        <select id="city">
+                            <option>Cairo</option>
+                            <option>Giza</option>
+                            <option>Minia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Status</label>
+                        <select id="status">
+                            <option>Available</option>
+                            <option>Reserved</option>
+                            <option>Occupied</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Description</label>
+
+                        <textarea rows="6" id="description">
+Comfortable single room suitable for one student. The room is fully furnished with a bed, wardrobe, study desk, chair, and high-speed Wi-Fi. Located in a quiet area close to universities and public transportation. Utilities are included in the monthly rent.
+    </textarea>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Current Image</label>
+
+                        <img src="../image/p2.jpg" id="preview">
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Choose New Image</label>
+
+                        <input type="file" id="image" accept="image/*">
+                    </div>
+
+                </div>
+
+                <div class="buttons">   
+                    <button class="save-btn" onclick="saveRoom()">Save Changes</button>
+                    <a href="../pages/room.html" class="cancel-btn">Cancel</a>
+                </div>
+            </section>
+
+
+
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/edit.js"></script>
+</body>
+
+</html>

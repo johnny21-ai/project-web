@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+
+                <div>
+                    <h3>Mughtarib</h3>
+                    <span>Finder</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+                    <a href="../pages/dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/room.html">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Rooms</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reservations.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Reservations</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/students.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Students</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reports.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="logout" id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="active-link" href="#">Dashboard</a></li>
+                    <li><a href="../pages/reservations.html">Reservations</a></li>
+                    <li><a href="../pages/profile.html">Profile</a></li>
+                </ul>
+
+                <div class="right-nav">
+
+                    <i class="fa-solid fa-moon" id="darkMode"></i>
+
+                    <div class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="count">2</span>
+                    </div>
+
+                    <img src="../image/131237776639362409.jpg" alt="User">
+
+                </div>
+
+            </nav>
+
+            <!-- Statistics Cards -->
+
+            <div class="contaner">
+
+                <div class="full">
+                    <h5>الغرف المحجوزه</h5>
+                    <h2>32</h2>
+                    <p>هذا الشهر</p>
+                </div>
+
+                <div class="empty">
+                    <h5>الغرف المتاحه</h5>
+                    <h2>18</h2>
+                    <p>هذا الشهر</p>
+                </div>
+
+                <div class="student">
+                    <h5>إجمالي الطلاب</h5>
+                    <h2>40</h2>
+                    <p>هذا الشهر</p>
+                </div>
+
+                <div class="earn">
+                    <h5>الأرباح المتوقعة</h5>
+                    <h2>24,600</h2>
+                    <p>هذا الشهر</p>
+                </div>
+
+            </div>
+
+            <!-- Analysis -->
+
+            <div class="Analysis">
+
+                <div class="table">
+
+                    <h3>إدارة الطلاب</h3>
+
+                    <table>
+
+                        <tr class="top">
+                            <th>الحالة</th>
+                            <th>تاريخ الحجز</th>
+                            <th>انتهاء الحجز</th>
+                            <th>الغرفة</th>
+                            <th>الطالب</th>
+                        </tr>
+
+                        <tr>
+                            <td class="Right">مفعل</td>
+                            <td>20-7-2026</td>
+                            <td>20-1-2027</td>
+                            <td>101</td>
+                            <td>أحمد محمد</td>
+                        </tr>
+
+                        <tr>
+                            <td class="active">نشط</td>
+                            <td>20-12-2026</td>
+                            <td>20-6-2027</td>
+                            <td>202</td>
+                            <td>محمد حسن</td>
+                        </tr>
+
+                        <tr>
+                            <td class="end">منتهي</td>
+                            <td>2-5-2026</td>
+                            <td>20-1-2026</td>
+                            <td>303</td>
+                            <td>مصطفى محمد</td>
+                        </tr>
+
+                        <tr>
+                            <td class="next">قادم</td>
+                            <td>20-6-2028</td>
+                            <td>1-7-2028</td>
+                            <td>404</td>
+                            <td>سارة عادل</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div class="diagram">
+                    <h3>الأرباح الشهرية</h3>
+
+                    <canvas id="incomeChart"></canvas>
+                </div>
+
+            </div> <!-- Footer -->
+
+            <div class="footer">
+
+                <a href="../pages/add-property.html" class="button">
+                    إضافة سكن جديد
+                </a>
+
+                <div class="h">
+                    <h3>
+
+                        <a href="../pages/reservations.html">عرض كل الحجوزات</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </h3>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="../css/students.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+
+                <div>
+                    <h3>Mughtarib</h3>
+                    <span>Finder</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+
+                <li >
+                    <a href="../pages/dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/room.html">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Rooms</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reservations.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Reservations</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="../pages/students.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Students</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reports.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="logout"  id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+
+                <ul class="links">
+                    <li><a href="../pages/dashboard.html">Home</a></li>
+                    <li><a class="active-link" href="../pages/dashboard.html">Dashboard</a></li>
+                    <li><a href="../pages/reservations.html">Reservations</a></li>
+                    <li><a href="../pages/profile.html">Profile</a></li>
+                </ul>
+
+                <div class="right-nav">
+
+                    <i class="fa-solid fa-moon" id="darkMode"></i>
+
+                    <div class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="count">2</span>
+                    </div>
+
+                    <img src="../image/131237776639362409.jpg" alt="User">
+
+                </div>
+
+            </nav>
+            <section class="cards">
+
+                <div class="card students-card">
+                    <h5>Total Students</h5>
+                    <h2>240</h2>
+                </div>
+
+                <div class="card active-card">
+                    <h5>Active Students</h5>
+                    <h2>218</h2>
+                </div>
+
+                <div class="card room-card">
+                    <h5>Assigned Rooms</h5>
+                    <h2>180</h2>
+                </div>
+
+                <div class="card pending-card">
+                    <h5>Pending Requests</h5>
+                    <h2>22</h2>
+                </div>
+
+            </section>
+
+            <section class="students-table">
+
+                <div class="table-header">
+                    <h2>Students List</h2>
+
+                    <button class="add-btn" onclick="window.location.href='add-student.html'">
+                        + Add Student
+                    </button>
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Faculty</th>
+                            <th>Year</th>
+                            <th>Room</th>
+                            <th>Phone</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Ahmed Mohamed</td>
+                            <td>Computer Science</td>
+                            <td>3</td>
+                            <td>101</td>
+                            <td>01000000000</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Ali Hassan</td>
+                            <td>Engineering</td>
+                            <td>2</td>
+                            <td>204</td>
+                            <td>01111111111</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Sara Adel</td>
+                            <td>Business</td>
+                            <td>4</td>
+                            <td>305</td>
+                            <td>01222222222</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/logout.js"></script>
+<script src="../js/student.js"></script>
+</body>
+
+</html>

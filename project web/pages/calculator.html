@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حاسبة تكلفة السكن</title>
+    <link rel="stylesheet" href="../css/calculator.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-house"></i>
+
+          <span>Mughtarib</span>
+        </div>
+
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="../pages/search.html">Search</a></li>
+
+          <li><a href="../pages/housing.html">Housing</a></li>
+
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#features">Features</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="../pages/login.html" class="login-btn"> Login </a>
+      </nav>
+    </header>
+
+    <div class="page">
+      <div class="page-header">
+        <div>
+          <h1>
+            <span class="icon">
+              <i class="fa-solid fa-calculator"></i>
+            </span>
+            حاسبة تكلفة السكن
+          </h1>
+          <p>احسب التكلفة الإجمالية المتوقعة لإقامتك بسهولة وبدقة</p>
+        </div>
+        <div class="breadcrumb"><b>الرئيسية</b> / الحاسبة</div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-title">
+            أدخل بيانات التكلفة
+            <span class="title-icon">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </span>
+          </div>
+          <div class="housing-box">
+            <img
+              class="housing-img"
+              src="../image/img-1.webp"
+              alt="سكن للطالبات"
+            />
+            <div class="housing-info">
+              <div class="housing-row">
+                <div class="housing-col right">
+                  <div class="housing-label">اسم السكن</div>
+                  <div class="housing-value">سكن المدينة الجامعية للطالبات</div>
+                </div>
+              </div>
+              <div class="housing-row">
+                <div class="housing-col right">
+                  <div class="housing-label">الإيجار الشهري الأساسي</div>
+                  <div class="housing-value amount">2,500 جنيه</div>
+                </div>
+                <div class="housing-col left">
+                  <div class="housing-label">الموقع</div>
+                  <div class="housing-value">المنيا - مدينة المنيا</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-label-side">
+              <div class="label-top">
+                <span class="ico">
+                  <i class="fa-regular fa-calendar-days"></i>
+                </span>
+                مدة الإقامة (عدد الأشهر)
+              </div>
+              <div class="label-sub">أدخل عدد الأشهر التي ستقيمها في السكن</div>
+            </div>
+            <div class="field-input">
+              <input type="number" value="6" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-label-side">
+              <div class="label-top">
+                <span class="ico">
+                  <i class="fa-solid fa-bolt"></i>
+                </span>
+                الكهرباء (شهريًا)
+              </div>
+
+              <div class="label-sub">متوسط فاتورة الكهرباء الشهرية</div>
+            </div>
+
+            <div class="field-input">
+              <input type="number" value="200" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-label-side">
+              <div class="label-top">
+                <span class="ico">
+                  <i class="fa-solid fa-faucet-drip"></i>
+                </span>
+
+                المياه (شهريًا)
+              </div>
+
+              <div class="label-sub">متوسط فاتورة المياه الشهرية</div>
+            </div>
+
+            <div class="field-input">
+              <input type="number" value="100" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-label-side">
+              <div class="label-top">
+                <span class="ico">
+                  <i class="fa-solid fa-wifi"></i>
+                </span>
+
+                الإنترنت (شهريًا)
+              </div>
+
+              <div class="label-sub">تكلفة الإنترنت الشهرية</div>
+            </div>
+
+            <div class="field-input">
+              <input type="number" value="150" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-label-side">
+              <div class="label-top">
+                <span class="ico">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                </span>
+
+                مصروفات إضافية (شهريًا)
+              </div>
+
+              <div class="label-sub">أدخل أي مصاريف إضافية أخرى إن وجدت</div>
+            </div>
+
+            <div class="field-input">
+              <input type="number" value="100" />
+            </div>
+          </div>
+
+          <button class="calc-btn">
+            <i class="fa-solid fa-calculator"></i>
+            احسب التكلفة
+          </button>
+
+          <div class="secure-note">
+            <i class="fa-solid fa-lock"></i>
+            بياناتك آمنة ولن يتم تخزينها
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            ملخص التكاليف الشهرية
+
+            <span class="title-icon">
+              <i class="fa-solid fa-chart-pie"></i>
+            </span>
+          </div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <div class="label">
+                <span class="ico">
+                  <i class="fa-solid fa-house"></i>
+                </span>
+
+                الإيجار الشهري
+              </div>
+
+              <div class="value">2,500 جنيه</div>
+            </div>
+
+            <div class="summary-item">
+              <div class="label">
+                <span class="ico">
+                  <i class="fa-solid fa-bolt"></i>
+                </span>
+
+                الكهرباء
+              </div>
+
+              <div class="value">200 جنيه</div>
+            </div>
+
+            <div class="summary-item">
+              <div class="label">
+                <span class="ico">
+                  <i class="fa-solid fa-faucet-drip"></i>
+                </span>
+
+                المياه
+              </div>
+
+              <div class="value">100 جنيه</div>
+            </div>
+
+            <div class="summary-item">
+              <div class="label">
+                <span class="ico">
+                  <i class="fa-solid fa-wifi"></i>
+                </span>
+
+                الإنترنت
+              </div>
+
+              <div class="value">150 جنيه</div>
+            </div>
+
+            <div class="summary-item">
+              <div class="label">
+                <span class="ico">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                </span>
+
+                مصروفات إضافية
+              </div>
+
+              <div class="value">100 جنيه</div>
+            </div>
+          </div>
+
+          <div class="total-row">
+            <div class="value">3,050 جنيه</div>
+            <div class="label">إجمالي شهري</div>
+          </div>
+
+          <div class="total-box">
+            <div class="total-box-title">
+              <span>إجمالي التكلفة الكلية</span>
+
+              <span class="duration-pill">
+                6 أشهر
+                <span style="opacity: 0.8">عن مدة</span>
+              </span>
+            </div>
+
+            <div class="total-amount">18,300</div>
+
+            <div class="total-amount-label">جنيه مصري</div>
+
+            <div class="total-box-footer">
+              <div class="row">
+                <span class="value">3,050 جنيه</span>
+                <span>الإجمالي الشهري</span>
+              </div>
+
+              <div class="row">
+                <span class="value">6</span>
+                <span>عدد الأشهر</span>
+              </div>
+              <div class="row final">
+                <span class="value">18,300 جنيه</span>
+                <span>إجمالي التكلفة الكلية</span>
+              </div>
+            </div>
+          </div>
+          <div class="estimate-note">
+            <span class="check">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            هذا المبلغ تقديري وقد يختلف حسب الاستهلاك الفعلي
+          </div>
+        </div>
+      </div>
+      <div class="tip-bar">
+        <div class="tip-icon">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <div class="tip-text">
+          <strong>نصيحة</strong>
+          <span>
+            يمكنك تقليل المصاريف الإضافية من خلال مشاركة بعض الخدمات مع زملائك
+            في السكن
+          </span>
+        </div>
+      </div>
+    </div>
+    <a href="#Home">
+      <div class="up">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+      </div>
+    </a>
+    <script src="../js/details.js"></script>
+    <script src="../js/calculator.js"></script>
+  </body>
+</html>

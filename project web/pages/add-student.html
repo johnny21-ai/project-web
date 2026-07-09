@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/students.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+
+                <div>
+                    <h3>Mughtarib</h3>
+                    <span>Finder</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="../pages/dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/room.html">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Rooms</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reservations.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Reservations</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="../pages/students.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Students</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reports.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="logout" id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a class="active-link" href="../pages/dashboard.html">Dashboard</a></li>
+                    <li><a href="../pages/reservations.html">Reservations</a></li>
+                    <li><a href="../pages/profile.html">Profile</a></li>
+                </ul>
+
+                <div class="right-nav">
+
+                    <i class="fa-solid fa-moon" id="darkMode"></i>
+
+                    <div class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="count">2</span>
+                    </div>
+
+                    <img src="../image/131237776639362409.jpg" alt="User">
+
+                </div>
+
+            </nav>
+
+
+            <h2 class="page-title">Add Student</h2>
+
+            <form class="form">
+
+                <div class="grid">
+
+                    <div class="input-box">
+                        <label>Student Name</label>
+                        <input type="text" placeholder="Ahmed Mohamed" id="name">
+                    </div>
+
+                    <div class="input-box">
+                        <label>National ID</label>
+                        <input type="text" id="nationalId">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Faculty</label>
+
+                        <select id="faculty">
+                            <option>Computer Science</option>
+                            <option>Engineering</option>
+                            <option>Business</option>
+                            <option>Medicine</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Academic Year</label>
+
+                        <select id="year">
+                            <option>First</option>
+                            <option>Second</option>
+                            <option>Third</option>
+                            <option>Fourth</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+                        <label>Room Number</label>
+                        <input type="number" id="room">
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Gender</label>
+
+                        <select id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+                        <label>Parent Phone</label>
+                        <input type="tel">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Check In Date</label>
+                        <input type="date">
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Address</label>
+
+                    <textarea rows="5"></textarea>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="save">
+                        Save Student
+                    </button>
+
+                    <button type="reset" class="cancel">
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/addstudent.js"></script>
+</body>
+
+</html>

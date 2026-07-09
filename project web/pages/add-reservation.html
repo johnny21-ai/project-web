@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/students.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+
+                <div>
+                    <h3>Mughtarib</h3>
+                    <span>Finder</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="../pages/dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/room.html">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Rooms</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="../pages/reservations.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Reservations</span>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="../pages/students.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Students</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/reports.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="logout" id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a class="active-link" href="../pages/dashboard.html">Dashboard</a></li>
+                    <li><a href="../pages/reservations.html">Reservations</a></li>
+                    <li><a href="../pages/profile.html">Profile</a></li>
+                </ul>
+
+                <div class="right-nav">
+
+                    <i class="fa-solid fa-moon" id="darkMode"></i>
+
+                    <div class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="count">2</span>
+                    </div>
+
+                    <img src="image/131237776639362409.jpg" alt="User">
+
+                </div>
+
+            </nav>
+
+
+            <h2 class="page-title">Add Reservation</h2>
+
+            <form class="form">
+
+                <div class="grid">
+
+                    <div class="input-box">
+                        <label>Student Name</label>
+                        <input type="text" placeholder="Ahmed Mohamed" id="student">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Room Number</label>
+                        <select id="room">
+                            <option>Room 101</option>
+                            <option>Room 102</option>
+                            <option>Room 201</option>
+                            <option>Room 202</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Reservation Date</label>
+                        <input type="date" id="reservation-date">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Check-In Date</label>
+                        <input type="date" id="checkIn">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Check-Out Date</label>
+                        <input type="date" id="checkOut">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Payment Method</label>
+                        <select>
+                            <option>Cash</option>
+                            <option>Visa</option>
+                            <option>Instapay</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Amount Paid</label>
+                        <input type="number" placeholder="0" id="amount">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Status</label>
+                        <select id="status">
+                            <option>Pending</option>
+                            <option>Confirmed</option>
+                            <option>Cancelled</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+                    <label>Notes</label>
+                    <textarea rows="5" placeholder="Write any notes..."></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="save">
+                        Save Reservation
+                    </button>
+
+                    <button type="reset" class="cancel">
+                        Reset
+                    </button>
+                </div>
+
+            </form>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/addreservation.js"></script> 
+
+</body>
+
+</html>

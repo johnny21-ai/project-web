@@ -1,0 +1,196 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .12);
+    text-align: center;
+}
+
+.students-card h2 {
+    color: #2563EB;
+}
+
+.active-card h2 {
+    color: #28a745;
+}
+
+.room-card h2 {
+    color: #0d6efd;
+}
+
+.pending-card h2 {
+    color: #ffc107;
+}
+
+.students-table {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .12);
+    overflow-x: auto;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-btn {
+    background: #2563EB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+thead {
+    background: #2563EB;
+    color: #fff;
+}
+
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.active {
+    background: #28a745;
+}
+
+.pending {
+    background: #ffc107;
+    color: #000;
+}
+
+.edit,
+.delete {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.delete {
+    background: #dc3545;
+    color: #fff;
+}
+
+.page-title {
+    color: #2563EB;
+    margin-bottom: 25px;
+}
+
+.form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+
+}
+
+.input-box {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-box label {
+
+    margin-bottom: 8px;
+    font-weight: 600;
+
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+.input-box textarea {
+
+    width: 100%;
+    margin-top: 20px;
+    resize: none;
+
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus {
+
+    border-color: #2563EB;
+
+}
+
+.buttons {
+
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.save,
+.cancel {
+
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.save {
+
+    background: #2563EB;
+
+}
+
+.cancel {
+
+    background: #dc3545;
+
+}

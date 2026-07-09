@@ -1,0 +1,158 @@
+/* ===== Reservation ===== */
+
+.page-title{
+    font-size:30px;
+    color:#2563EB;
+    margin:25px 0;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.search{
+    flex:1;
+    min-width:260px;
+    padding:12px 15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+}
+
+.search:focus,
+.filter:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 5px rgba(94,53,177,.3);
+}
+
+.filter{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.save{
+    background:#2563EB;
+    color:#fff;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save:hover{
+    background:#47279a;
+}
+
+.table-box{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+    overflow:hidden;
+}
+
+.table-box table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table-box thead{
+    background:#2563EB;
+}
+
+.table-box th{
+    color:#fff;
+    padding:18px;
+}
+
+.table-box td{
+    padding:16px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+.table-box tbody tr:nth-child(even){
+    background:#fafafa;
+}
+
+.table-box tbody tr:hover{
+    background:#f4efff;
+}
+
+.status{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.status.active{
+    background:#d4edda;
+    color:#198754;
+}
+
+.status.pending{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.status.cancel{
+    background:#f8d7da;
+    color:#dc3545;
+}
+
+.edit,
+.delete{
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.edit{
+    background:#0d6efd;
+}
+
+.delete{
+    background:#dc3545;
+}
+
+.edit:hover{
+    background:#0b5ed7;
+}
+
+.delete:hover{
+    background:#bb2d3b;
+}
+
+@media(max-width:768px){
+
+    .top-bar{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .search,
+    .filter,
+    .save{
+        width:100%;
+    }
+
+    .table-box{
+        overflow-x:auto;
+    }
+
+    .table-box table{
+        min-width:900px;
+    }
+
+}

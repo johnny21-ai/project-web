@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      
+</head>
+<body>
+     <header>
+
+        <nav>
+
+            <div class="logo">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Mughtarib</span>
+
+            </div>
+
+            <ul>
+
+                <li><a href="../index.html">Home</a></li>
+
+                <li><a href="../pages/search.html">Search</a></li>
+
+                <li><a href="../pages/housing.html">Housing</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <a href="../pages/login.html" class="login-btn">
+
+                Login
+
+            </a>
+
+        </nav>
+
+    </header>
+
+   <div class="wrap">
+  <div class="breadcrumb">
+    <a href="#">الرئيسية</a>
+    <i class="fa-solid fa-chevron-left"></i>
+    <a href="#">نتائج البحث</a>
+    <i class="fa-solid fa-chevron-left"></i>
+    <span class="current">سكن المدينة الجامعية للطالبات</span>
+  </div>
+  <div class="layout">
+    <div class="col-main">
+      <div>
+        <div class="gallery">
+          <div class="gallery-main">
+            <img id="mainImage" src="../image/img-1.webp" alt="غرفة سكن طالبات">
+            <span class="gallery-counter"><span id="counterText">1 / 6</span></span>
+            <button class="gallery-arrow left"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="gallery-arrow right"><i class="fa-solid fa-chevron-left"></i></button>
+          </div>
+        </div>
+        <div class="thumbs" id="thumbsRow">
+          <img class="active" src="../image/img-2.webp">
+          <img src="../image/img-3.webp">
+          <img src="../image/img-4.webp">
+          <img src="../image/img-5.webp">
+          <img src="../image/img-6.webp">
+        </div>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-circle-info"></i> نبذة عن السكن</h2>
+        <p class="about-text">
+          سكن مريح وآمن للطالبات بالقرب من جامعة المنيا. يتميز بالهدوء والنظافة والخدمات المتكاملة.
+          يوفر السكن جميع الاحتياجات الأساسية للمعيشة والدراسة في بيئة مناسبة وآمنة.
+        </p>
+        <div class="feature-grid">
+          <div class="feature-item"><span class="tick"><i class="fa-solid fa-check"></i></span> تنظيف يتم فيه أسبوعيا</div>
+          <div class="feature-item"><span class="tick"><i class="fa-solid fa-check"></i></span> مواصلات سهلة</div>
+          <div class="feature-item"><span class="tick"><i class="fa-solid fa-check"></i></span> قريب من الجامعة</div>
+          <div class="feature-item"><span class="tick"><i class="fa-solid fa-check"></i></span> بيئة مناسبة للدراسة</div>
+          <div class="feature-item"><span class="tick"><i class="fa-solid fa-check"></i></span> أمن على مدار الساعة</div>
+          <div class="feature-item"><span class="tick"><i class="fa-solid fa-check"></i></span> إنترنت واي فاي للاستمرار</div>
+        </div>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-star"></i> الخدمات المتاحة</h2>
+        <div class="amenities-grid">
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-wifi"></i></span><span>واي فاي</span></div>
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-kitchen-set"></i></span><span>مطبخ مشترك</span></div>
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-shirt"></i></span><span>غسالة ملابس</span></div>
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-droplet"></i></span><span>مياه ساخنة</span></div>
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-shield-halved"></i></span><span>أمن وحراسة</span></div>
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-video"></i></span><span>كاميرات مراقبة</span></div>
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-wind"></i></span><span>تكييف</span></div>
+          <div class="amenity"><span class="icon-circle"><i class="fa-solid fa-broom"></i></span><span>نظافة دورية</span></div>
+        </div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden;">
+        <div class="location-grid">
+          <div class="location-info">
+            <h3><i class="fa-solid fa-location-dot"></i> الموقع</h3>
+            <ul class="loc-list">
+              <li>المنيا - مدينة المنيا <i class="fa-solid fa-location-dot"></i></li>
+              <li>بعد 5 دقائق عن جامعة المنيا <i class="fa-solid fa-graduation-cap"></i></li>
+              <li>قريب من موقف الأتوبيسات <i class="fa-solid fa-bus"></i></li>
+              <li>منطقة هادئة وآمنة <i class="fa-solid fa-shield-halved"></i></li>
+            </ul>
+            <button class="btn-outline-map"><i class="fa-solid fa-map"></i> عرض على الخريطة</button>
+          </div>
+          <div class="map-visual">
+            <iframe
+              id="mapFrame"
+              src=""
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+            <i class="fa-solid fa-location-dot map-pin"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-side">
+      <div class="title-block" style="margin-bottom:20px;">
+        <div class="title-row">
+          <h1>سكن المدينة الجامعية للطالبات</h1>
+          <i class="fa-solid fa-circle-check verified"></i>
+        </div>
+        <div class="meta-line"><i class="fa-solid fa-location-dot"></i> المنيا - مدينة المنيا</div>
+        <div class="meta-line"><i class="fa-solid fa-graduation-cap"></i> بعد 5 دقائق عن جامعة المنيا</div>
+      </div>
+      <div class="price-card">
+        <div class="price-amount">2,500</div>
+        <div class="price-period">جنيه / شهر</div>
+        <span class="status-pill"><span class="dot"></span> متاح الآن</span>
+      </div>
+      <div class="card details-card">
+        <div class="details-row">
+          <span class="details-label"><i class="fa-solid fa-users"></i> نوع السكن</span>
+          <span class="details-value">طالبات</span>
+        </div>
+        <div class="details-row">
+          <span class="details-label"><i class="fa-solid fa-door-open"></i> عدد الغرف</span>
+          <span class="details-value">3 غرف</span>
+        </div>
+        <div class="details-row">
+          <span class="details-label"><i class="fa-solid fa-bed"></i> عدد الأسرة</span>
+          <span class="details-value">6 أسرة</span>
+        </div>
+        <div class="details-row">
+          <span class="details-label"><i class="fa-solid fa-bath"></i> الحمامات</span>
+          <span class="details-value">2 حمام</span>
+        </div>
+        <div class="details-row">
+          <span class="details-label"><i class="fa-solid fa-up-right-and-down-left-from-center"></i> المساحة</span>
+          <span class="details-value">120 م²</span>
+        </div>
+        <div class="details-row">
+          <span class="details-label"><i class="fa-solid fa-building"></i> الدور</span>
+          <span class="details-value">الدور الثاني</span>
+        </div>
+    </div>
+      <div class="booking-box">
+        <div class="booking-price">2,500 جنيه / شهر</div>
+        <div class="booking-sub">يشمل الخدمات الأساسية</div>
+        <div class="booking-line">
+          <span>تأمين (مسترد)</span>
+          <span class="val">2,500 جنيه</span>
+        </div>
+        <div class="booking-line">
+          <span>عمولة حجز</span>
+          <span class="val">300 جنيه</span>
+        </div>
+        <div class="booking-total">
+          <span class="label">الإجمالي عند الحجز</span>
+          <span class="amount">2,800 جنيه</span>
+        </div>
+        <button class="btn-primary"><i class="fa-solid fa-calendar-check"></i> احجز الآن</button>
+        <a  class="btn-secondary"><i class="fa-solid fa-calculator"></i> احسب التكلفة</a>
+        <div class="booking-note"><i class="fa-regular fa-clock"></i> احجز الآن قبل أن يتم الحجز</div>
+      </div>
+    </div>
+  </div>
+</div> 
+<a href="#Home">
+        <div class="up">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </div>
+    </a>
+    <script src="../js/details.js"></script>
+    
+</body>
+</html>
